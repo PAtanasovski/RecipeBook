@@ -24,6 +24,10 @@ export class ShoppingListComponent implements OnInit, OnDestroy {
       );
    }
 
+   onEditItem(index: number) {
+      this.slService.staretedEditing.next(index);
+   }
+
    ngOnDestroy() {
       // Called once, before the instance is destroyed.
       // Add 'implements OnDestroy' to the class.
