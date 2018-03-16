@@ -22,7 +22,7 @@
                   <a routerLink="/signin">Login</a>
                </li>
             </ng-template>
-            <ng-template *ngIf="isAuthenticated()">
+            <ng-template [ngIf]="isAuthenticated()">
                <li>
                   <a style="cursor: pointer;" (click)="onLogout()">Logout</a>
                </li>
